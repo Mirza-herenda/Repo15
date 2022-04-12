@@ -1,13 +1,12 @@
-function printManyTimes(str) 
-{
-"use strict";
-const sentence=str + "is cool !";
+function printManyTimes(str) {
+    "use strict";
 
-for (let i=0;i <str.length;i=i+2)//5
-{
-    console.log(sentence);
-    console.log(i);
+    const SENTENCE = str + " is cool!";
+    for (let i = 0; i < str.length; i += 2) {
+        console.log(SENTENCE);
+    }
+    return SENTENCE;
+
 }
-return sentence;
-}
- printManyTimes("Arena ");
+printManyTimes("Arena");
+module.exports = printManyTimes;

@@ -1,11 +1,14 @@
+const milili = [10, 25, 4];
 
-const milili=[10,25,4];
-function myArr(mili) 
-{
-mili[0]=4;
-mili[1]=10;
-mili[2]=25; 
-console.log(mili);
-return mili; 
+function myArr(mili) {
+    'use strict';
+
+    milili[0] = 4;
+    milili[1] = 10;
+    milili[2] = 25;
+    return mili;
 }
-myArr(milili);
+
+console.log(myArr(milili));
+
+module.exports = myArr;
